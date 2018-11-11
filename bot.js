@@ -40,7 +40,7 @@ console.log(`Bots is ready and working in ${bot.guilds.size} servers with ${bot.
     
 bot.user.setStatus('Online')
 
-bot.user.setActivity(`in ${bot.guilds.size} Servers | !help`);
+bot.user.setActivity(`g!yardım |`  + client.guilds.size + `| -Sunucu  İletişim Rıdvan#2123`);
     
 
 try {
