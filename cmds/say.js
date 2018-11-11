@@ -1,13 +1,9 @@
 module.exports.run = async (bot, message, args) => {
     
-	let mesaj = args.slice(0).join(' ');
-	if (mesaj.length < 1) return message.reply('Yazmam İçin Birşey Yazmalısın!');
-    message.delete();
-    const embed = new Discord.RichEmbed()
-    .setAuthor('')
-    .setColor(3447003)
-    .setDescription(`${mesaj}`)
-    return message.channel.sendEmbed(embed);
+    const sayMessage = args.join(" ");
+    message.delete().catch(O_o=>{}); 
+    message.channel.send(sayMessage);
+
 }
 
 module.exports.help = {
