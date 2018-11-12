@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
  
     let embed = new Discord.RichEmbed()
     .setColor("#00ff00")
-    .setTitle("bAĞIŞ BOT")
+    .setTitle("BAĞIŞ BOT")
     .setThumbnail(bicon)
     .addField("Bize Destek Olabilirsin", "<@350261026031271938>")
     .addField("Bot Komutları", "Özel komutlar", inline)
