@@ -7,9 +7,9 @@ module.exports.run = async (bot, message, args) => {
  
     let embed = new Discord.RichEmbed()
     .setColor("#00ff00")
-    .setTitle("Donate Bot")
+    .setTitle("bAĞIŞ BOT")
     .setThumbnail(bicon)
-    .addField("You can order your own discord bot from", "<@350261026031271938>")
+    .addField("Bize Destek Olabilirsin", "<@350261026031271938>")
     .addField("Bot Komutları", "Özel komutlar", inline)
     .addField("Xp Sistemi", "İsteğe Bağlı", inline)
     .addField("Özel Bot", "Hyr,Hekez Davet Edebilir")
