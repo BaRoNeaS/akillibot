@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
     .setTitle("Sunucumuz")
     .setImage("https://cdn.discordapp.com/avatars/291221132256870400/4f71fea454b62405b55f2fe0d8e7db0c.png?size=2048")
     .setDescription("Sunucumuza Bağlanmak İçin [Tıkla](https://discord.gg/AF49zt5)")
-    .setFooter("<> means required, [] means optional")
+    .setFooter("Bu Kadar xd")
     .setTimestamp()
 
     pidor.send(supEmbed)
@@ -43,7 +43,7 @@ module.exports.run = async (bot, message, args) => {
     let chanEmbed = new Discord.RichEmbed()
     .setTitle("Yardım")
     .setColor("#0ff00")
-    .setFooter(`Help command used by: ${pidor.user.username}`)
+    .setFooter(`Yardım Komutları Könderildi: ${pidor.user.username}`)
     .setDescription(`${pidor} Mesaj Kutuna Gönderdim`);
 
     message.channel.send(chanEmbed).then(msg => {msg.delete(5000)});
