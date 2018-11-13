@@ -9,6 +9,7 @@ let donateEmb = new Discord.RichEmbed()
 .addField("Bynogame Donate", "[Bynogame](https://www.bynogame.com/destekle/genceryunuskurt)")
 .addField("Steam Donate", "[Steam](https://steamcommunity.com/id/genceryunuskurt/)")
 .setFooter("Gencer Yunus Kurt")
+.setFooter("@everyone")
 .setThumbnail(bicon)
 
 message.channel.send(donateEmb)
