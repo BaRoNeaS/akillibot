@@ -11,41 +11,40 @@ module.exports.run = async (bot, message, args) => {
 
     let funEmbed = new Discord.RichEmbed()
     .setColor("00ff00")
-    .setTitle("**__Fun commands__**")
+    .setTitle("**__Eğlence Komutları__**")
     .setDescription(funcommands)
     
     pidor.send(funEmbed);
 
     let infoEmbed = new Discord.RichEmbed()
     .setColor("00ff00")
-    .setTitle("**__Info commands__**")
+    .setTitle("**__Bilgi Komutlarıs__**")
     .setDescription(infoList)
 
     pidor.send(infoEmbed);
 
     let modembed = new Discord.RichEmbed()
     .setColor("00ff00")
-    .setTitle("**__Admin commands__**")
+    .setTitle("**__Admin Komutları__**")
     .setDescription(adminCommands)
     
     pidor.send(modembed);
 
     let supEmbed = new Discord.RichEmbed()
     .setColor("#00ff00")
-    .setTitle("Support")
+    .setTitle("Sunucumuz")
     .setImage("https://cdn.discordapp.com/avatars/291221132256870400/4f71fea454b62405b55f2fe0d8e7db0c.png?size=2048")
-    .setDescription("If you need help with something feel free to join the [Support Server](https://discord.gg/zvvasbc)")
+    .setDescription("Sunucumuza Bağlanmak İçin [Tıkla](https://discord.gg/AF49zt5)")
     .setFooter("<> means required, [] means optional")
     .setTimestamp()
-    .addField("Contact", "To contact with the owner use `!contact`")
 
     pidor.send(supEmbed)
 
     let chanEmbed = new Discord.RichEmbed()
-    .setTitle("Help")
+    .setTitle("Yardım")
     .setColor("#0ff00")
     .setFooter(`Help command used by: ${pidor.user.username}`)
-    .setDescription(`${pidor} Check your DMs`);
+    .setDescription(`${pidor} Mesaj Kutuna Gönderdim`);
 
     message.channel.send(chanEmbed).then(msg => {msg.delete(5000)});
 
@@ -54,5 +53,5 @@ module.exports.run = async (bot, message, args) => {
  }
 
  module.exports.help = {
-     name: "help" 
+     name: "yardım" 
  }
