@@ -8,7 +8,6 @@ let donateEmb = new Discord.RichEmbed()
 .setDescription("Bana Bağış Yaparak Destek Olabilirsin")
 .addField("Bynogame Donate", "[Bynogame](https://www.bynogame.com/destekle/genceryunuskurt)")
 .addField("Steam Donate", "[Steam](https://steamcommunity.com/id/genceryunuskurt/)")
-.addField("@everyone")
 .setFooter("Gencer Yunus Kurt")
 .setThumbnail(bicon)
 
