@@ -28,6 +28,19 @@ fs.readdir("./cmds", (err, files) => {
         bot.commands.set(props.help.name, props);
     });
 });
+bot.on('guildMemberAdd', member => {
+    let channel = member.guild.channels.find('name', 'yeniüye');
+    let memberavatar = member.user.avatarURL
+        if (!channel) return;
+        let embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setThumbnail(memberavatar)
+        .addField('İsmi:', `${member}`)
+        .addField('Sunucumuza Hoşgeldin', ';(')
+        .setTimestamp()
+
+        channel.sendEmbed(embed);
+});
 
 bot.on("ready", async () => {
 console.log(`Bots is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users!`);
