@@ -28,23 +28,9 @@ fs.readdir("./cmds", (err, files) => {
         bot.commands.set(props.help.name, props);
     });
 });
-bot.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'yeniuye');
-    let memberavatar = member.user.avatarURL
-        if (!channel) return;
-        let embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
-        .setThumbnail(memberavatar)
-        .addField('İsmi:', `${member}`)
-        .addField('Sunucumuza Hoşgeldin', ';(')
-        .setTimestamp()
-
-        channel.sendEmbed(embed);
-});
-bot.on('guildMemberAdd', member => {
-
-    console.log(`${member}`, "has joined" + `${member.guild.name}`)
-
+bot.on("guildMemberAdd", function(member) {
+    let role = member.guild.roles.find("name", "uye");
+    member.addRole(role).catch(console.error);
 });
 
 bot.on("ready", async () => {
