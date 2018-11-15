@@ -41,6 +41,11 @@ bot.on('guildMemberAdd', member => {
 
         channel.sendEmbed(embed);
 });
+bot.on('guildMemberAdd', member => {
+
+    console.log(`${member}`, "has joined" + `${member.guild.name}`)
+
+});
 
 bot.on("ready", async () => {
 console.log(`Bots is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users!`);
