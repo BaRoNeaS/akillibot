@@ -28,10 +28,7 @@ fs.readdir("./cmds", (err, files) => {
         bot.commands.set(props.help.name, props);
     });
 });
-bot.on("guildMemberAdd", function(member) {
-    let role = member.guild.roles.find("name", "uye");
-    member.addRole(role).catch(console.error);
-});
+
 
 bot.on("ready", async () => {
 console.log(`Bots is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users!`);
