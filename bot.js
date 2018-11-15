@@ -29,7 +29,7 @@ fs.readdir("./cmds", (err, files) => {
     });
 });
 bot.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'yeniüye');
+    let channel = member.guild.channels.find('name', 'yeniuye');
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
