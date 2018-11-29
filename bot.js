@@ -52,17 +52,6 @@ try {
         }
 });
 
-bot.on('ready', function() {
-    console.log(bot.user.username);
-});
-
-bot.on('message', function() {
-    if (message.content === "$loop") { 
-      var interval = setInterval (function () {
-        bot.sendMessage(message.channel, "123")
-      }, 1 * 10000); 
-    }
-});
      
 bot.on("message", async message => {
     if(message.author.bot) return;
